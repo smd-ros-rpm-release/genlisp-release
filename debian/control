@@ -1,0 +1,16 @@
+Source: ros-fuerte-genlisp
+Section: misc
+Priority: extra
+Maintainer: Bhaskara Marthi <bhaskara@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-fuerte-catkin,ros-fuerte-genmsg
+Homepage: http://www.ros.org/wiki/roslisp
+Standards-Version: 3.9.2
+
+Package: ros-fuerte-genlisp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-fuerte-genmsg
+Description: ROS message generation for Lisp.
+ .
+ This stack contains the packages:
+ * genlisp: Common-Lisp ROS message and service generators.
+
