@@ -1,0 +1,9 @@
+*~
+*.pyc
+._*
+*~
+
+# these are left around by setup.py
+build
+dist
+src/genlisp.egg-info/
