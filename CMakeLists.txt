@@ -1,16 +1,18 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 2.8)
 project(genlisp)
-find_package(catkin REQUIRED COMPONENTS genmsg)
+find_package(catkin)
+find_package(genmsg)
 
-catkin_package(
-  CATKIN_DEPENDS genmsg
+catkin_stack()
+catkin_project(genlisp
   CFG_EXTRAS genlisp-extras.cmake
+  )
+
+file(WRITE ${CMAKE_CURRENT_BINARY_DIR}/genlisp "LISP")
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/genlisp
+  DESTINATION etc/langs
 )
 
-add_subdirectory(scripts)
-
-file(WRITE ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/genlisp "LISP")
-install(FILES ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/genlisp
-  DESTINATION ${GENMSG_LANGS_DESTINATION})
+install(FILES stack.xml DESTINATION share/${PROJECT_NAME})
 
 catkin_python_setup()
