@@ -1,3 +1,3 @@
 [git-buildpackage]
-upstream-branch=release/genlisp/0.4.10
+upstream-branch=@(release_tag)
 upstream-tree=branch
