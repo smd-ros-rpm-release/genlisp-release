@@ -1,0 +1,12 @@
+Source: ros-hydro-genlisp
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin (>= 0.5.78), ros-hydro-genmsg
+Homepage: http://www.ros.org/wiki/roslisp
+Standards-Version: 3.9.2
+
+Package: ros-hydro-genlisp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-genmsg
+Description: Common-Lisp ROS message and service generators.
