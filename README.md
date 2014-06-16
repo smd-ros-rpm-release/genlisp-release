@@ -1,3 +1,22 @@
+## genlisp (indigo) - 0.4.14-0
+
+The packages in the `genlisp` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo genlisp` on `Mon, 16 Jun 2014 18:21:14 -0000`
+
+The `genlisp` package was released.
+
+Version of package(s) in repository `genlisp`:
+- rosdistro version: `0.4.13-0`
+- old version: `0.4.13-0`
+- new version: `0.4.14-0`
+
+Versions of tools used:
+- bloom version: `0.5.9`
+- catkin_pkg version: `0.2.2`
+- rosdep version: `0.10.27`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## genlisp (indigo) - 0.4.13-0
 
 The packages in the `genlisp` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo genlisp` on `Wed, 07 May 2014 22:15:36 -0000`
